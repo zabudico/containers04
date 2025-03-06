@@ -27,15 +27,26 @@ PS C:\Users\User\Desktop\containers04>
 
     docker run - запускает контейнер
 
-    -ti - комбинация двух флагов (-t и -i), которая запускает псевдотерминал для взаимодействия с контейнером
+    -ti - комбинация двух флагов (-t и -i), которая
+    запускает псевдотерминал для взаимодействия с контейнером
 
-    -p - флаг для маппинга порта 8000:80 (Мы мыпим внутренний порт контейнера 80 на внешний порт 8000) (В дальнейшем мне придётся перемапить порт на 8080 т.к 8000 занят на моём компьютере)
+    -p - флаг для маппинга порта 8000:80
+    (Мы мыпим внутренний порт контейнера
+    80 на внешний порт 8000)
+    (В дальнейшем мне придётся
+    перемапить порт на 8080 т.к
+    8000 занят на моём компьютере)
 
-    --name containers04 - задаёт имя контейнера
+    --name containers04 -
+    задаёт имя контейнера
 
-    ubuntu bash - указывает что в качестве образа мы используем образ ubuntu и запускаем bash, с которой будем взаимодействовать через терминал, заданный флагом -ti
+    ubuntu bash - указывает что в качестве
+     образа мы используем образ ubuntu и
+     запускаем bash, с которой будем
+     взаимодействовать через терминал,
+     заданный флагом -ti
 
-![docker run -ti](image-1.png)
+![docker run -ti](img/image-1.png)
 
 В открывшемся окне выполняю следующие команды:
 
@@ -45,17 +56,17 @@ apt install apache2 -y
 service apache2 start
 ```
 
-![apt update](image-2.png)
+![apt update](img/image-2.png)
 
-![apt install apache2 -y](image-3.png)
+![apt install apache2 -y](img/image-3.png)
 
-![apt install apache2 -y](image-4.png)
+![apt install apache2 -y](img/image-4.png)
 
-![service apache2 start](image-5.png)
+![service apache2 start](img/image-5.png)
 
 Открываю браузер и ввожу в адресной строке http://localhost:8000. Вот что я вижу:
 
-![what do I see? 1](image-6.png)
+![what do I see? 1](img/image-6.png)
 
 Выполняю следующие команды:
 
@@ -64,11 +75,11 @@ ls -l /var/www/html/
 echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 ```
 
-![ls -l /var/www/html/](image-7.png)
+![ls -l /var/www/html/](img/image-7.png)
 
 Обновляю страницу в браузере. Вот что я вижу:
 
-![what do I see? 2](image-8.png)
+![what do I see? 2](img/image-8.png)
 
 Выполняю следующие команды:
 
@@ -77,8 +88,7 @@ cd /etc/apache2/sites-enabled/
 cat 000-default.conf
 ```
 
-![cd /etc/apache2/sites-enabled/ 
-cat 000-default.conf](image-9.png)
+![cd /etc/apache2/sites-enabled/            cat 000-default.conf](img/image-9.png)
 
 Что я вижу на экране:
 
