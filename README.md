@@ -106,7 +106,7 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 
 ![docker run -ti](img/image-1.png)
 
-В открывшемся окне выполняю следующие команды:
+- В открывшемся окне выполняю следующие команды:
 
 ```bash
 apt update
@@ -168,7 +168,7 @@ Apache2 запускается и становится активным.
 
 ![what do I see? 1](img/image-6.png)
 
-Выполняю следующие команды:
+- Выполняю следующие команды:
 
 ```bash
 ls -l /var/www/html/
@@ -211,7 +211,7 @@ echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 
 Браузер отображает новую страницу с текстом "Hello, World!" вместо стандартной страницы Apache2.
 
-Выполняю следующие команды:
+- Выполняю следующие команды:
 
 ```bash
 cd /etc/apache2/sites-enabled/
