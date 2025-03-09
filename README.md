@@ -26,13 +26,15 @@
 
 Клонирую его себе на компьютер, открываю терминал, перехожу в эту дерикторию.
 
-![Создаю репозиторий](img/image.png)
+![Создаю репозиторий](img/image_create.png)
 
 Выполняю команду:
 
 ```bash
 git clone https://github.com/zabudico/containers04.git
 ```
+
+![repositorii](img\image_main.png)
 
 #### Назначение:
 
