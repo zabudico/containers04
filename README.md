@@ -34,7 +34,7 @@
 git clone https://github.com/zabudico/containers04.git
 ```
 
-![repositorii](img\image_main.png)
+![repositorii](img/image_main.png)
 
 #### Назначение:
 
